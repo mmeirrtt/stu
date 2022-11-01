@@ -35,5 +35,6 @@ def is_personel(uid):
         fname = split(exc_tb.tb_frame.f_code.co_filename)[1]
         loggin(content=f"{fname}, {exc_tb.tb_lineno}, {exc_type}, {error}")
 
-    # TODO: TEST
-    return uid.upper() + "000000" in liste if len(uid) == 8 else uid.upper() in liste
+    uid = uid.upper() if len(uid) == 14 else uid.upper() + "000000"
+
+    return uid in liste
