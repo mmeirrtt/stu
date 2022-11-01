@@ -70,7 +70,7 @@ def main():
                                 m_pin(pin=ONAY_PIN, value=True)
 
                                 m_pin(pin=BUZZER_PIN, value=True)
-                                sleep(BUZZER_TIME / 2)  # TODO: TEST
+                                sleep(BUZZER_TIME / 2)
                                 m_pin(pin=BUZZER_PIN, value=False)
 
                             else:
