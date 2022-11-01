@@ -10,7 +10,7 @@ from sys import exc_info
 
 def rfid_save(uid, zaman, gun, ay, yil, am_pm):
     for _ in range(14 - len(uid)):
-        uid = uid + "0"
+        uid = str(uid) + "0"
 
     folder = join(
         join(

@@ -36,6 +36,6 @@ def is_personel(uid):
         loggin(content=f"{fname}, {exc_tb.tb_lineno}, {exc_type}, {error}")
 
     for _ in range(14 - len(uid)):
-        uid = uid + "0"
+        uid = str(uid) + "0"
 
     return uid.upper() in liste
